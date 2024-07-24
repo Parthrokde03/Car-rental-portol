@@ -169,11 +169,11 @@ foreach($results as $result)
      <td><?php echo htmlentities($result->FromDate);?></td>
       <td> <?php echo htmlentities($result->ToDate);?></td>
        <td><?php echo htmlentities($tds=$result->totaldays);?></td>
-        <td> <?php echo htmlentities($ppd=$result->PricePerDay);?></td>
+        <td>₹<?php echo htmlentities($ppd=$result->PricePerDay);?></td>
   </tr>
   <tr>
     <th colspan="4" style="text-align:center;"> Grand Total</th>
-    <th><?php echo htmlentities($tds*$ppd);?></th>
+    <th>₹<?php echo htmlentities($tds*$ppd);?></th>
   </tr>
 </table>
 <hr />
